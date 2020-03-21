@@ -1,0 +1,30 @@
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+                {{--  card  --}}
+                <div class="row mb-3" id="car{{ id }}">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <b>{{ title }}</b> 
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">{{ description }}</div>
+                                <p class="card-text">
+                                    <small class="text-muted">Preço R$ {{ price }}</small>
+                                </p>
+                                <button type="button" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-shopping-cart"> Adicionar</i>
+                                </button>   
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
