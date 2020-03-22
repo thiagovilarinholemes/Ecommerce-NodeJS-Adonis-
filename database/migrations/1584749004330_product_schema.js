@@ -15,6 +15,7 @@ class ProductSchema extends Schema {
             .references('id')
             .on('subcategories')
             .onDelete('cascade')
+      table.string('path', 50)
       table.timestamps()
     })
   }

@@ -18,5 +18,9 @@ const Route = use('Route')
 
 Route.on('/').render('site.home.index')
 
+Route.resource('users', 'UserController')
+
+Route.post('/user/login', 'UserController.login').as('user.login')
 
 
+//
